@@ -28,3 +28,10 @@ WHERE ship_region IS NOT NULL
 GROUP BY ship_country
 HAVING SUM(freight) > 2750
 ORDER BY SUM(freight) DESC
+
+
+
+-- inner join показывает только те записи для которых нашли пары
+-- left join выведет все записи из первой таблицы, а для не найденых пар второй расставит значени null
+-- right join выведет все записи из второй таблицы, а для не найденных пар первой расставит значение NULL
+-- outher join выводит все записи из обеих таблиц
